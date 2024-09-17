@@ -9,15 +9,22 @@ In the LVLM's community, there're some methods to bridge the gap between visual 
 
 - **SEA**: SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs(Aug. 21, 2024)
   - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2408.11813)
-- **Eagle**: Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders(Aug 28, 2024)
+  - follow the pretraining-finetuning paradigm of LLaVA but **add another contrastive loss** $L_a$ in the pretraing stage alongside the next token prediction loss $L_g$, resulting the optimization loss $L=L_g+\lambda L_a$. 
+  - The contrastive training is a supervised process. With the CLIP model(the vision encoder $f$ and the text encoder $h$), SEA extracts the most relevant words $S_i$ from a predefined word list for every image patch $v_i$ . 
+  - In the similarity calculation, we can gain a pair of {relevant word  $s_u$  and the similarity score $w_u$​}, thus a similarity-weighted sampling method is used for imaga patch-word choosing. 
+- **Eagle**: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders(Aug 28, 2024)
   - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.arxiv.org/abs/2408.15998) [![Star](https://img.shields.io/github/stars/NVlabs/EAGLE.svg?style=social&label=Star)](https://github.com/NVlabs/EAGLE)
+  - adding additional vision encoders
+  - exploring a series of fusion strategies to concatenate visual tokens from different vision encoders
+  - introducing a language pre-alignment method for non-language-supervised vision encoders
+  - discussing the way of unlocking vision encoders during LVLM pretraining stage
 - **AC score**: Law of Vision Representation in MLLMs(Aug 29, 2024)
   - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2408.16357) [![Star](https://img.shields.io/github/stars/bronyayang/law_of_vision_representation_in_mllms.svg?style=social&label=Star)](https://github.com/bronyayang/law_of_vision_representation_in_mllms)
   - analyze cross-modality alignment and vision correspondence of vision representation and their influence on LVLMs' performance
 
 ----
 
-- **VLAP**: Bridging Vision and Language Spaces with Assignment Prediction(Apr. 15, 2024)
+- **VLAP**: Bridging Vision and Language Spaces with Assignment Prediction(Apr. 15, 2024) **ICRL2024**
   - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2404.09632) [![Star](https://img.shields.io/github/stars/park-jungin/vlap.svg?style=social&label=Star)](https://github.com/park-jungin/vlap)
 - **V2T Tokenizer**: Beyond Text: Frozen Large Language Models in Visual Signal Comprehension(Mar 12, 2024)
   -  [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2403.07874) [![Star](https://img.shields.io/github/stars/zh460045050/v2l-tokenizer.svg?style=social&label=Star)](https://github.com/zh460045050/v2l-tokenizer)
@@ -46,4 +53,5 @@ In the LVLM's community, there're some methods to bridge the gap between visual 
 - **Alt-MoE**: Alt-MoE: Multimodal Alignment via Alternating Optimization of Multi-directional MoE with Unimodal Models(Sep 9, 2024)
   - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.arxiv.org/abs/2409.05929) 
 - **Lyrics**: Lyrics: Boosting Fine-grained Language-Vision Alignment and Comprehension via Semantic-aware Visual Objects(Dec 8, 2023)
+
   - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2312.05278) 
