@@ -1,0 +1,71 @@
+<mxfile host="Electron" modified="2024-09-17T02:59:39.557Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="cHiS2tPGUe1oEPDikN1g" version="24.4.0" type="device">
+  <diagram name="第 1 页" id="0UJa6CVwZmFgRl2jWxgi">
+    <mxGraphModel dx="989" dy="577" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hRW_CQQThr22nsAOR6cx-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hRW_CQQThr22nsAOR6cx-1" target="hRW_CQQThr22nsAOR6cx-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-1" value="Image" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="48" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-2" value="Text" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="77" y="236" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-3" value="Image Embedding" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="414" y="48" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-4" value="Text Embedding" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="417" y="233" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-6" value="The alignment Embedding Space" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="266.5" y="134" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hRW_CQQThr22nsAOR6cx-9" target="hRW_CQQThr22nsAOR6cx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-9" value="Image Encoder" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="263" y="55.5" width="87" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-15" value="Text Encoder" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="263" y="247" width="87" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" target="hRW_CQQThr22nsAOR6cx-15" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="269.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="hRW_CQQThr22nsAOR6cx-15" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="269.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-18" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=-0.056;exitY=0.414;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hRW_CQQThr22nsAOR6cx-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="146" as="sourcePoint" />
+            <mxPoint x="200" y="96" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-19" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="hRW_CQQThr22nsAOR6cx-6" target="hRW_CQQThr22nsAOR6cx-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="239" y="240" as="sourcePoint" />
+            <mxPoint x="177" y="169" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-20" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414.5" y="104" as="sourcePoint" />
+            <mxPoint x="344.5" y="161" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRW_CQQThr22nsAOR6cx-21" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=-0.056;exitY=0.414;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="412" y="250" as="sourcePoint" />
+            <mxPoint x="350" y="179" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
