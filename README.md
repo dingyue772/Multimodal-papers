@@ -1,58 +1,37 @@
+This is a repo for organizing papers related to MLLMs. Most papers are from AK's daily papers, and I'll writing reading notes from time to time.
+
+# Daily Papers
+
+1. Arxiv [MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning](https://arxiv.org/abs/2409.20566) (使用MM1的模型架构，采用以数据为中心的模型训练方法，系统探索了整个模型训练生命周期中不同数据混合的影响，推出MoE-based MLLMs, 处理视频理解的MM1.5-Video和处理移动UI理解的MM1.5-UI)
+2. NeurIPS [Image Copy Detection for Diffusion Models](https://arxiv.org/abs/2409.19952) (引入了首个专为扩散模型设计的图像复制检测（ICD）模型ICDiff并使用Stable Diffusion v1.5创建了D-Rep数据集) [[Code](https://github.com/WangWenhao0716/PDF-Embedding)]
+3. Arxiv [IDEAW: Robust Neural Audio Watermarking with Invertible Dual-Embedding](https://arxiv.org/abs/2409.19627) (为解决当前音频水印技术中存在的容量低、隐蔽性不够和水印定位问题，设计了一个双嵌入水印模型) [[Code](https://github.com/PecholaL/IDEAW)]
+
 # Awesome Modality Alignment
 Modality Alignment refers to the process of ensuring that different modalities are appropriately aligned. Specifically, in Large Vision-Language Models (LVLMs), the goal is to align visual tokens with the embedding space of the large language model.
 
 In the LVLM's community, there're some methods to bridge the gap between visual and textual representations.
+## 2024
+0. Arxiv [Law of Vision Representation in MLLMs](https://arxiv.org/abs/2408.16357) (分析跨模态对齐和视觉表征的视觉对应关系对LVLMs性能的影响) [[Code](https://github.com/bronyayang/law_of_vision_representation_in_mllms)]
+1. Arxiv [The Platonic Representation Hypothesis](https://arxiv.org/abs/2405.07987) (不同神经网络表示数据的方式正变得越来越统一并进行了相关的分析)
+[[Code](https://github.com/minyoungg/platonic-rep)]
+2. Arxiv [SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs](https://arxiv.org/abs/2408.11813) (遵循LLaVA的预训练-微调范式，但在预训练阶段增加另一个对比损失$L_a$，与下一个令牌预测损失$L_g$一起，得到新的优化损失$L=L_g+\lambda L_a$)
+3. ICRL [VLAP: Bridging Vision and Language Spaces with Assignment Prediction(Apr. 15, 2024](https://arxiv.org/abs/2404.09632) [[Code](https://github.com/park-jungin/vlap)]
+4. Arxiv [V2T Tokenizer: Beyond Text: Frozen Large Language Models in Visual Signal Comprehension](https://arxiv.org/abs/2403.07874) [[Code](https://github.com/zh460045050/v2l-tokenizer)]
+5. Arxiv [SoM prompting: List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs](https://arxiv.org/abs/2404.16375) [[Code](https://github.com/zzxslp/som-llava)]
+6. Arxiv [AlignGPT: AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability](https://arxiv.org/abs/2405.14129) [[Code](https://github.com/AlignGPT-VL/AlignGPT)]
+7. [Visual Prompting: Rethinking Visual Prompting for Multimodal Large Language Models with External Knowledge](https://arxiv.org/abs/2407.04681)
+8. Arxiv [ X-VILA: Cross-Modality Alignment for Large Language Model](https://arxiv.org/abs/2405.19335)
+9. Arxiv [LexVLA: Unified Lexical Representation for Interpretable Visual-Language Alignment](https://arxiv.org/abs/2407.17827)
+10. ICLR [ Vision Transformers Need Registers](https://arxiv.org/abs/2309.16588)
+11. Arxiv [SIMA: Enhancing Visual-Language Modality Alignment in Large Vision Language Models via Self-Improvement](https://arxiv.org/abs/2405.15973) [[Code](https://github.com/umd-huang-lab/sima)]
+12. ICML [WCA: Visual-Text Cross Alignment: Refining the Similarity Score in Vision-Language Models(Jun 5, 2024)](https://arxiv.org/abs/2406.02915) [[Code](https://github.com/tmlr-group/wca)]
+13. Arxiv [Multi-Modal Adapter: Multi-Modal Adapter for Vision-Language Models](https://www.arxiv.org/abs/2409.02958)
+14. Arxiv [Alt-MoE: Alt-MoE: Multimodal Alignment via Alternating Optimization of Multi-directional MoE with Unimodal Models](https://www.arxiv.org/abs/2409.05929)
+## 2023
+0. Arxiv [geometry-aware: Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence](https://arxiv.org/abs/2311.17034) [[Code](https://github.com/Junyi42/geoaware-sc)]
+1. Arxiv [Lyrics: Lyrics: Boosting Fine-grained Language-Vision Alignment and Comprehension via Semantic-aware Visual Objects](https://arxiv.org/abs/2312.05278)
+## 2022
+0. NeurIPS [Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning](https://arxiv.org/abs/2203.02053) (展示了模态表征差异的现象，并证明了这一现象在不同的数据模态和神经网络架构中普遍存在) [[Code](https://github.com/weixin-liang/modality-gap)]
 
-## Measure modality alignment
-
-- **AC score**: Law of Vision Representation in MLLMs(Aug 29, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2408.16357) [![Star](https://img.shields.io/github/stars/bronyayang/law_of_vision_representation_in_mllms.svg?style=social&label=Star)](https://github.com/bronyayang/law_of_vision_representation_in_mllms)
-  - analyze cross-modality alignment and vision correspondence of vision representation and their influence on LVLMs' performance
-- **The Platonic Representation Hypothesis**(May 13, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2405.07987) [![Star](https://img.shields.io/github/stars/minyoungg/platonic-rep.svg?style=social&label=Star)](https://github.com/minyoungg/platonic-rep)
-  - the way different neural networks represent data is becoming increasingly uniform
-    - Convergence of Cross-Modal Data Representations: As model sizes increase, the similarity between visual models and language models in representing data also increases.
-    - Drivers of Representation Convergence: The universality of tasks, the increase in model capacity, and reduced inductive bias
-- **Mind the Gap**: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning(May 3, 2022) **NeurIPS 2022**
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2203.02053) [![Star](https://img.shields.io/github/stars/weixin-liang/modality-gap.svg?style=social&label=Star)](https://github.com/weixin-liang/modality-gap)
-  -  The phenomenon of modal representation differences is demonstrated, and it is proven that this phenomenon is universally present across different data modalities and neural network architectures.
-    - General Inductive Bias of Deep Neural Networks
-    - Non-linear Activation Functions in Models Effectively Promote the Emergence of Embedding Cones
-    - Different Random Initializations Create Different Embedding Cones
-    - Preservation of Contrastive Learning Objectives
 
 
-## Enhance modality alignment
-- **SEA**: SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs(Aug. 21, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2408.11813)
-  - follow the pretraining-finetuning paradigm of LLaVA but **add another contrastive loss** $L_a$ in the pretraing stage alongside the next token prediction loss $L_g$, resulting the optimization loss $L=L_g+\lambda L_a$. 
-  - The contrastive training is a supervised process. With the CLIP model(the vision encoder $f$ and the text encoder $h$), SEA extracts the most relevant words $S_i$ from a predefined word list for every image patch $v_i$ . 
-  - In the similarity calculation, we can gain a pair of {relevant word  $s_u$  and the similarity score $w_u$​}, thus a similarity-weighted sampling method is used for imaga patch-word choosing. 
-- **VLAP**: Bridging Vision and Language Spaces with Assignment Prediction(Apr. 15, 2024) **ICRL2024**
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2404.09632) [![Star](https://img.shields.io/github/stars/park-jungin/vlap.svg?style=social&label=Star)](https://github.com/park-jungin/vlap)
-- **V2T Tokenizer**: Beyond Text: Frozen Large Language Models in Visual Signal Comprehension(Mar 12, 2024)
-  -  [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2403.07874) [![Star](https://img.shields.io/github/stars/zh460045050/v2l-tokenizer.svg?style=social&label=Star)](https://github.com/zh460045050/v2l-tokenizer)
-- **SoM prompting**: List Items One by One: A New Data Source and Learning Paradigm for Multimodal LLMs(Apr 25, 2024)
-  -  [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2404.16375)  [![Star](https://img.shields.io/github/stars/zzxslp/som-llava.svg?style=social&label=Star)](https://github.com/zzxslp/som-llava)
-- **AlignGPT**: AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability(May 23, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2405.14129)  [![Star](https://img.shields.io/github/stars/AlignGPT-VL/AlignGPT.svg?style=social&label=Star)](https://github.com/AlignGPT-VL/AlignGPT)
-- **Visual Prompting**: Rethinking Visual Prompting for Multimodal Large Language Models with External Knowledge(Jul 5, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2407.04681) 
-- **a visual embedding highway module**: X-VILA: Cross-Modality Alignment for Large Language Model(May 29, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2405.19335)
-- **LexVLA**: Unified Lexical Representation for Interpretable Visual-Language Alignment(Jul 25, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2407.17827)
-- Vision Transformers Need Registers(Sep 28, 2024, ICLR2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2309.16588)
-- **geometry-aware**: Telling Left from Right: Identifying Geometry-Aware Semantic Correspondence(Nov 28, 2023)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2311.17034) [![Star](https://img.shields.io/github/stars/Junyi42/geoaware-sc.svg?style=social&label=Star)](https://github.com/Junyi42/geoaware-sc)
-- **SIMA**: Enhancing Visual-Language Modality Alignment in Large Vision Language Models via Self-Improvement(May 24, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2405.15973) [![Star](https://img.shields.io/github/stars/umd-huang-lab/sima.svg?style=social&label=Star)](https://github.com/umd-huang-lab/sima)
-- **WCA**: Visual-Text Cross Alignment: Refining the Similarity Score in Vision-Language Models(Jun 5, 2024) **ICML**
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2406.02915) [![Star](https://img.shields.io/github/stars/tmlr-group/wca.svg?style=social&label=Star)](https://github.com/tmlr-group/wca)
-- **Multi-Modal Adapter**: Multi-Modal Adapter for Vision-Language Models(Sep 3, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.arxiv.org/abs/2409.02958) 
-- **Alt-MoE**: Alt-MoE: Multimodal Alignment via Alternating Optimization of Multi-directional MoE with Unimodal Models(Sep 9, 2024)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://www.arxiv.org/abs/2409.05929) 
-- **Lyrics**: Lyrics: Boosting Fine-grained Language-Vision Alignment and Comprehension via Semantic-aware Visual Objects(Dec 8, 2023)
-  - [![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2312.05278) 
