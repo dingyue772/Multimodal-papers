@@ -1,0 +1,8 @@
+0. arXiv 2025 [Detection and Mitigation of Hallucination in Large Reasoning Models: A Mechanistic Perspective](https://arxiv.org/abs/2505.12886)
+1. ICLR 2025 Spotlight [ReDeEP: Detecting Hallucination in Retrieval-Augmented Generation via Mechanistic Interpretability](https://arxiv.org/abs/2410.11414)
+2. ACL 2025 [Mitigating Visual Forgetting via Take-along Visual Conditioning for Multi-modal Long CoT Reasoning](https://arxiv.org/abs/2503.13360) [Code](https://github.com/sun-hailong/TVC)
+3. arXiv 2024 [Thinking Before Looking: Improving Multimodal LLM Reasoning via Mitigating Visual Hallucination](https://arxiv.org/abs/2411.12591) [Code](https://github.com/Terry-Xu-666/visual_inference_chain)
+4. arXiv 2025 [Qwen Look Again: Guiding Vision-Language Reasoning Models to Re-attention Visual Information](https://www.arxiv.org/abs/2505.23558) [Code](https://github.com/Liar406/Look_Again)
+5. arXiv 2025 [The Mirage of Multimodality:Where Truth is Tested and Honesty Unravels](https://arxiv.org/abs/2505.20214) [Code](https://github.com/truthfulvqa/TruthfulVQA_code)
+6. arXiv 2025 [Demystifying Reasoning Dynamics with Mutual Information: Thinking Tokens are Information Peaks in LLM Reasoning](https://arxiv.org/abs/2506.02867) [Code](https://github.com/ChnQ/MI-Peaks)
+7. arXiv 2025 [Look-Back: Implicit Visual Re-focusing in MLLM Reasoning](https://arxiv.org/abs/2507.03019) [Code](https://github.com/PKU-YuanGroup/Look-Back)

@@ -1,1 +1,2 @@
 0. ICLR 2025 [Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation](https://arxiv.org/abs/2410.13640) (提出CoE方法，使用大模型生成回答的各层隐藏状态构建特征进行幻觉检测) [Code](https://github.com/Alsace08/Chain-of-Embedding) [[Read Notes](https://zhuanlan.zhihu.com/p/1914666741583295162)]
+1. arXiv 2025 [Landscape of Thoughts: Visualizing the Reasoning Process of Large Language Models](https://arxiv.org/abs/2503.22165) [Code](https://github.com/tmlr-group/landscape-of-thoughts) (在选择题数据集上可视化LLM的推理路径)

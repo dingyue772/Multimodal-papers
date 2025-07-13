@@ -1,3 +1,4 @@
 0. CVPR 2025 [ClearSight: Visual Signal Enhancement for Object Hallucination Mitigation in Multimodal Large language Models](https://arxiv.org/abs/2503.13107) (提出VAF方法，更改模型中间层的注意力矩阵，增强对视觉信息的关注，减小对系统提示的关注) [[Read Notes](https://zhuanlan.zhihu.com/p/1921172480497779933)]
 1. arXiv 2025 [The Mirage of Performance Gains: Why Contrastive Decoding Fails to Address Multimodal Hallucination](https://arxiv.org/abs/2504.10020) (分析视觉对比解码方法能够缓解多模态幻觉问在于单向调整输出分布和自适应合理性约束带来的采样策略退化为贪婪解码) [[Read Notes](https://zhuanlan.zhihu.com/p/1921864931495637319)]
 2. arXiv 2024 [Seeing Clearly by Layer Two: Enhancing Attention Heads to Alleviate Hallucination in LVLMs](https://arxiv.org/abs/2411.09968) (增强浅层密集的视觉注意力汇的比例，在注意力头之间进行注意力矩阵复制) [[Read Notes](https://zhuanlan.zhihu.com/p/1923329609581201391)]
+3. arXiv 2025 [More Thinking, Less Seeing? Assessing Amplified Hallucination in Multimodal Reasoning Models](https://arxiv.org/abs/2505.21523) (提出RH-Bench来分析多模态推理模型的推理能力和感知能力)
