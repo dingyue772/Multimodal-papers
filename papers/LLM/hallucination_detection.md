@@ -1,0 +1,1 @@
+0. ICLR 2025 [Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation](https://arxiv.org/abs/2410.13640) (提出CoE方法，使用大模型生成回答的各层隐藏状态构建特征进行幻觉检测) [Code](https://github.com/Alsace08/Chain-of-Embedding) [[Read Notes](https://zhuanlan.zhihu.com/p/1914666741583295162)]
